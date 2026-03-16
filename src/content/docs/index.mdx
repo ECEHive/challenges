@@ -1,0 +1,43 @@
+---
+title: Hive Challenges
+template: splash
+hero:
+  tagline: A fun new way to learn about the tools at the Hive!
+  image:
+    file: ../../assets/running-hive.png
+  actions:
+  - text: Benchtop
+    link: /benchtop/basic
+    icon: right-arrow
+  - text: Crafts
+    link: /crafts/basic
+    icon: right-arrow
+  - text: 3D Printing
+    link: /3d-printing/basic
+    icon: right-arrow
+  - text: Laser Cutting
+    link: /laser-cutting/basic
+    icon: right-arrow
+  - text: Machine Shop
+    link: /machine-shop/basic
+    icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## How does it work?
+
+<CardGrid stagger>
+	<Card title="1. Get your passport!" icon="open-book">
+		Go to the Hive front desk and ask a PI for a passport.
+	</Card>
+	<Card title="2. Do Challenges!" icon="seti:yml">
+		Start trying the various challenges on this site. You can do them in any order!
+	</Card>
+	<Card title="3. Get Stamps" icon="approve-check">
+		Each challenge you complete is marked by a super unique and cool stamp in your passport.
+	</Card>
+	<Card title="4. Finish" icon="star">
+		Completing all the challenges may have a special prize. (TODO: is this true)
+	</Card>
+</CardGrid>

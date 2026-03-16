@@ -1,0 +1,15 @@
+---
+// This is the same Head component as Starlight uses, except for adding <Font /> tags to load Hive branding fonts
+
+import { Font } from "astro:assets";
+const { head } = Astro.locals.starlightRoute;
+---
+
+{
+    head.map(({ tag: Tag, attrs, content }) => (
+        <Tag {...attrs} set:html={content} />
+    ))
+}
+
+<Font cssVariable="--font-rubik" />
+<Font cssVariable="--font-sora" />
